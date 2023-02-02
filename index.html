@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+        <title>Taran Leu Web Portfolio</title>
+    </head>
+    <body>
+        <header id="top">
+            <h1>Taran Leu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#music">Music</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <img src="./assets/images/taran-leu-mugshot.jpg" alt="Taran Leu's face"> 
+        </section>
+        <main>
+            <section id = "about-me" class = "portfolio-section">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>Music person.  Guitar person.  Person who writes code.  I share a birthday with Friedrich Nietzsche</p>
+                </div>
+            </section>
+            <section id = "work" class = "portfolio-section">
+                <h2>Work</h2>
+                <div class="content">
+                    <a href="https://github.com/J3rkStore/prework-study-guide" class = "work-item" id="prework-study-guide">
+                        <div>
+                            <h3>Prework Study Guide</h3>
+                            <span>HTML, CSS, JS</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/J3rkStore/horiseon-site-accessibility-refactor" class = "work-item" id="accessibility-refactor">
+                        <div>
+                            <h3>Accessibility Refactor</h3>
+                            <span>HTML, CSS</span>
+                        </div>
+                    </a>
+                    <a href="https://j3rkstore.github.io/weatheringo/" class = "work-item" id="third-thing">
+                        <div>
+                            <h3>SkyJam</h3>
+                            <span>ServerSide APIs, JS, CSS frameworks, HTML</span>
+                        </div>
+                    </a>
+                    <a href="" class = "work-item" id="fourth-thing">
+                        <div>
+                            <h3>Fourth Thing</h3>
+                            <span>Coming Q6</span>
+                        </div>
+                    </a>  
+                </div>
+            </section>
+            <section id = "contact-me" class = "portfolio-section">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <p>email: taran.leu@outlook.com</p>
+                    <p>phone:  385-695-9502</p>
+                    <p>github: https://github.com/J3rkStore </p>
+                </div>
+            </section>
+            <section id = "resume" class = "portfolio-section">
+                <h2>Resume</h2>
+                <div class="content">
+                    <p>Coming Soon!</p>
+                </div>
+            </section>
+            <section id = "music" class = "portfolio-section">
+                <h2>Music</h2>
+                <section class="content">
+                <!-- removed from bandcamp players:  style="border: 0; width: 350px; height: 470px;"
+                removed from youtube video:  width="978" height="550"
+                added both to stylesheet for .player class--> 
+                    <iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/album=518237998/size=large/bgcol=333333/linkcol=9a64ff/tracklist=false/transparent=true/" seamless><a href="https://tribelessrec.bandcamp.com/album/seinfeld-bc-ep-larval-state-version">Seinfeld BC EP Larval State Version by Seinfeld BC</a></iframe>
+                    <iframe class="player"  src="https://bandcamp.com/EmbeddedPlayer/album=2895698822/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/track=469488313/transparent=true/" seamless><a href="https://tribelessrec.bandcamp.com/album/spent-wizard">Spent Wizard by Merlingo</a></iframe>                   
+                    <iframe class="player"  src="https://bandcamp.com/EmbeddedPlayer/album=1596408600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://tribelessrec.bandcamp.com/album/antarctica">Antarctica by Voidsmen</a></iframe>
+                    <iframe class="player" class="embedded-player" id="cum-fight-vid" src="https://www.youtube.com/embed/C5agCWDwASQ" title="**WARNING!! POTENTIALLY OFFENSIVE LYRICS**Cum Fight Full EP Lyric Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <!--adds nostalgia appeal-->
+            <p>👽 Webmaster Taran Leu 👽</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+    --bg-grad: 0deg, rgb(202, 149, 50), #274e75, black, black, #274e75, rgb(202, 149, 50);
+}
+
+
+body {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(var(--bg-grad));
+    background-size: 100vw 200vh;
+    position: relative;   
+}
+
+h1 {
+    font-size: 50px;
+    font-family: serif;
+}
+
+header {
+    width: 100%;
+    height: 120%;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #d7d8da;  
+}
+
+nav {
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav ul li a {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: bolder;
+    color: #000000;
+}
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #cce5f1;
+
+}
+
+.banner {  
+    background-color: #d7d8da;
+    background-image: url(./images/space-face.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* adds style to image of my face in banner*/
+.banner img {
+    width: 250px;
+    height: 330px;
+    box-shadow: 2px 30px 10px 3px #0c0d017b;
+    border-radius: 50% 50% 20% 20%;
+    opacity: 50%;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.portfolio-section {
+    margin-top: 30px;
+    display: flex;
+    max-width: 90vw;
+}
+
+/*sets style for section headers*/
+.portfolio-section h2 {
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 40px;
+    padding: 5px;
+    min-width: 200px;
+    height: 60px;
+    border: 2px solid rgba(130, 99, 20, 0.536);
+    background-color: silver;
+}
+
+.portfolio-section .content {
+    display: flex;
+    flex-wrap: wrap;  
+    color: #d7d8da;
+    position: relative;
+    left: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* content in the "work" section*/
+.work-item {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    justify-content: right;
+    bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #d6d6d6;
+    /*removes underlines for links*/
+    text-decoration: none;
+    text-shadow: 1px 2px #000000;
+}
+
+.work-item h3, span {
+    background-color: #000000;
+    padding: 2px;
+    margin: 3px;
+}
+
+/* makes the words bigger when you hover over the work items*/
+.work-item:hover {
+    font-size: 200%;
+    font-weight: 900;
+}
+/*makes the first work item larger*/
+.work-item:first-child {
+    height: 800px;
+    width: 800px;
+    
+}
+
+.player {
+    width: 350px; 
+    height: 470px;
+    border: 1px solid white;
+    margin: 10px
+}
+
+
+
+/* makes the content in the contact me section into a column */
+#contact-me .content{
+    flex-direction: column;
+}
+
+/* sets background images for work content */
+#prework-study-guide {
+    background-image: url("../assets/images/prework-study-guide-screenshot.PNG");
+}
+#accessibility-refactor {
+    background-image: url("../assets/images/accessibility-refactor.PNG");
+}
+#third-thing {
+    background-image: url("../assets/images/skyjam.PNG");
+}
+#fourth-thing {
+    background-image: url("../assets/images/fourth-thing.png");
+}
+
+
+/*changes size of items with scaling of browser window*/
+@media screen and (max-width: 1000px) {
+    .player {
+        width: 80%;
+        height: 90%;
+    }
+    .portfolio-section h2 {
+        font-size: 16px;
+        min-width: 100px;
+        max-height: 30px;
+        line-height: 20px;
+    }
+    .work-item {
+        width: 320px;
+        height: 320px;
+    }
+    .work-item:first-child {
+        width: 720px;
+        height: 720px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .player {
+        width: 70%;
+        height: 85%;
+    }
+    .work-item {
+        width: 280px;
+        height: 280px;
+    }
+    .work-item:first-child {
+        width: 660px;
+        height: 660px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio-section {
+        flex-direction: column;
+    }
+    .portfolio-section .content {
+        left: 5px;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .player {
+        width: 50%;
+        height: 70%;
+    }
+    .work-item {
+        width: 200px;
+        height: 200px;
+    }
+    .work-item:first-child {
+        width: 400px;
+        height: 400px;
+    }
+}
+
